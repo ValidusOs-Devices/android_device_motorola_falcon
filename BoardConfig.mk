@@ -33,10 +33,11 @@ TARGET_LIBINIT_DEFINES_FILE := $(DEVICE_PATH)/init/init_falcon.cpp
 TARGET_UNIFIED_DEVICE := true
 
 # Kernel Toolchain
-KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.3/bin
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.3-uber/bin
 KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+
 # Rom Toolchain
-TARGET_GCC_VERSION_EXP := 5.3
+TARGET_GCC_VERSION_EXP := 5.3-uber
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 10485760
